@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:id="@+id/main_linearlayout_lo"
+        android:id="@+id/structure_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -18,10 +18,11 @@
             android:id="@+id/titleTV"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="-20dp"
+            android:layout_marginBottom="20dp"
             android:layout_weight="0.5"
             android:fontFamily="monospace"
             android:paddingTop="40dp"
-            android:paddingBottom="-40dp"
             android:shadowColor="@color/purple_500"
             android:shadowDx="2.0"
             android:shadowDy="2.0"
@@ -34,101 +35,107 @@
             android:textStyle="bold|italic" />
 
         <LinearLayout
+            android:id="@+id/main_linearlayout_lo"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2">
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
 
-            <ImageButton
-                android:id="@+id/button_00"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:textSize="60sp"
-                app:srcCompat="@drawable/empty" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
 
-            <ImageButton
-                android:id="@+id/button_01"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:textSize="60sp"
-                app:srcCompat="@drawable/empty" />
+                <ImageButton
+                    android:id="@+id/button_00"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="60sp"
+                    app:srcCompat="@drawable/empty" />
 
-            <ImageButton
-                android:id="@+id/button_02"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:textSize="60sp"
-                app:srcCompat="@drawable/empty" />
+                <ImageButton
+                    android:id="@+id/button_01"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="60sp"
+                    app:srcCompat="@drawable/empty" />
 
-        </LinearLayout>
+                <ImageButton
+                    android:id="@+id/button_02"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="60sp"
+                    app:srcCompat="@drawable/empty" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2">
+            </LinearLayout>
 
-            <ImageButton
-                android:id="@+id/button_10"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:textSize="60sp"
-                app:srcCompat="@drawable/empty" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
 
-            <ImageButton
-                android:id="@+id/button_11"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:textSize="60sp"
-                app:srcCompat="@drawable/empty" />
+                <ImageButton
+                    android:id="@+id/button_10"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="60sp"
+                    app:srcCompat="@drawable/empty" />
 
-            <ImageButton
-                android:id="@+id/button_12"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:textSize="60sp"
-                app:srcCompat="@drawable/empty" />
+                <ImageButton
+                    android:id="@+id/button_11"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="60sp"
+                    app:srcCompat="@drawable/empty" />
 
-        </LinearLayout>
+                <ImageButton
+                    android:id="@+id/button_12"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="60sp"
+                    app:srcCompat="@drawable/empty" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2">
+            </LinearLayout>
 
-            <ImageButton
-                android:id="@+id/button_20"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:textSize="60sp"
-                app:srcCompat="@drawable/empty" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2">
 
-            <ImageButton
-                android:id="@+id/button_21"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:textSize="60sp"
-                app:srcCompat="@drawable/empty" />
+                <ImageButton
+                    android:id="@+id/button_20"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="60sp"
+                    app:srcCompat="@drawable/empty" />
 
-            <ImageButton
-                android:id="@+id/button_22"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:textSize="60sp"
-                app:srcCompat="@drawable/empty" />
+                <ImageButton
+                    android:id="@+id/button_21"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="60sp"
+                    app:srcCompat="@drawable/empty" />
 
+                <ImageButton
+                    android:id="@+id/button_22"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="60sp"
+                    app:srcCompat="@drawable/empty" />
+            </LinearLayout>
 
         </LinearLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/ControlLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1">
@@ -138,7 +145,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
-                android:text="Player 1: 0"
+                android:text="Player x: 0"
                 android:textColor="@android:color/white"
                 android:textSize="30sp"
                 app:layout_constraintBottom_toTopOf="@+id/main_playagain_btn"
@@ -149,7 +156,7 @@
                 android:id="@+id/text_view_p2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Player 2: 0"
+                android:text="Player o: 0"
                 android:textColor="@android:color/white"
                 android:textSize="30sp"
                 app:layout_constraintBottom_toTopOf="@+id/main_playagain_btn"
@@ -179,9 +186,164 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/oplay"
                 tools:layout_editor_absoluteX="5dp" />
-
-
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_weight="2">-->
+
+<!--                <ImageButton-->
+<!--                    android:id="@+id/button_20"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:textSize="60sp"-->
+<!--                    app:srcCompat="@drawable/empty" />-->
+
+<!--                <ImageButton-->
+<!--                    android:id="@+id/button_21"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:textSize="60sp"-->
+<!--                    app:srcCompat="@drawable/empty" />-->
+
+<!--                <ImageButton-->
+<!--                    android:id="@+id/button_22"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:textSize="60sp"-->
+<!--                    app:srcCompat="@drawable/empty" />-->
+
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_weight="2">-->
+
+<!--                <ImageButton-->
+<!--                    android:id="@+id/button_00"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:textSize="60sp"-->
+<!--                    app:srcCompat="@drawable/empty" />-->
+
+<!--                <ImageButton-->
+<!--                    android:id="@+id/button_01"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:textSize="60sp"-->
+<!--                    app:srcCompat="@drawable/empty" />-->
+
+<!--                <ImageButton-->
+<!--                    android:id="@+id/button_02"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:textSize="60sp"-->
+<!--                    app:srcCompat="@drawable/empty" />-->
+
+<!--            </LinearLayout>-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_weight="2">-->
+
+<!--                <ImageButton-->
+<!--                    android:id="@+id/button_10"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:textSize="60sp"-->
+<!--                    app:srcCompat="@drawable/empty" />-->
+
+<!--                <ImageButton-->
+<!--                    android:id="@+id/button_11"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:textSize="60sp"-->
+<!--                    app:srcCompat="@drawable/empty" />-->
+
+<!--                <ImageButton-->
+<!--                    android:id="@+id/button_12"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:textSize="60sp"-->
+<!--                    app:srcCompat="@drawable/empty" />-->
+
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:id="@+id/ControlLayout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/text_view_p1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="40dp"-->
+<!--                android:text="Player 1: 0"-->
+<!--                android:textColor="@android:color/white"-->
+<!--                android:textSize="30sp"-->
+<!--                app:layout_constraintBottom_toTopOf="@+id/main_playagain_btn"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/imv_player" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/text_view_p2"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Player 2: 0"-->
+<!--                android:textColor="@android:color/white"-->
+<!--                android:textSize="30sp"-->
+<!--                app:layout_constraintBottom_toTopOf="@+id/main_playagain_btn"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/text_view_p1"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/imv_player" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/main_playagain_btn"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="146dp"-->
+<!--                android:layout_marginEnd="146dp"-->
+<!--                android:layout_marginBottom="16dp"-->
+<!--                android:text="Again?"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintHorizontal_bias="0.0"-->
+<!--                app:layout_constraintStart_toStartOf="parent" />-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imv_player"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="4dp"-->
+<!--                android:layout_weight="0.5"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                app:srcCompat="@drawable/oplay"-->
+<!--                tools:layout_editor_absoluteX="5dp" />-->
+
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
